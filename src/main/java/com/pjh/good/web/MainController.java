@@ -2,7 +2,7 @@ package com.pjh.good.web;
 
 import org.springframework.web.bind.annotation.*;
 
-import com.pjh.test.web.dto.HelloResponseDto;
+import com.pjh.good.web.dto.HelloResponseDto;
 
 @RestController
 public class MainController {

@@ -1,4 +1,4 @@
-package com.pjh.test.web.dto;
+package com.pjh.good.web.dto;
 
 import lombok.*;
 
