@@ -1,4 +1,4 @@
-package com.pjh.test.domain.posts;
+package com.pjh.test.test;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
@@ -15,7 +15,7 @@ import com.pjh.good.domain.posts.Posts;
 import com.pjh.good.domain.posts.PostsRepository;
 
 @RunWith(SpringRunner.class)
-@SpringBootTest
+@SpringBootTest(classes = PostsRepository.class)
 public class PostsRepositoryTest {
 
     @Autowired
@@ -36,6 +36,7 @@ public class PostsRepositoryTest {
 
         // when
         List<Posts> postslist = postsRepository.findAll();
+        
         Posts posts = postslist.get(0);
         assertThat(posts.getTitle()).isEqualTo(title);
         assertThat(posts.getContent()).isEqualTo(content);
